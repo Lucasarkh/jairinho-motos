@@ -77,7 +77,6 @@ header.header-scroll .header-subtitle {
   transform: translate(-428px, 340px);
   font-size: 24px;
   color: #bdbdbd !important;
-  display: none;
 }
 header.header-scroll .header-whatsapp:hover {
   border: 1px solid #0e913e;
@@ -464,8 +463,11 @@ footer {
     header.header-scroll .header-subtitle {
       display: none !important;
     }
+    header h1 {
+      transition: .2s ease;
+    }
     header.header-scroll h1 {
-      transform: translate(32px, 120px);
+      transform: translate(26px, 120px);
       font-size: 32px !important;
     }
     .hero-banner {
