@@ -1,96 +1,417 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  loop: true,
-  autoplay: {
-    delay: 1000,
-  },
-  slidesPerView: 4,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const year = document.getElementById("year");
-year.innerHTML = new Date().getFullYear();
-
-function headerScroll() {
-  const header = document.querySelector("header");
-  const headerSubtitle = document.querySelector(".header-subtitle");
-  const whatsapp = document.querySelector(".whatsapp");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 70) {
-      header.style.backgroundColor = "rgba(0, 0, 0, 0.800)";
-      header.classList.remove("header-scroll");
-      headerSubtitle.style.display = "none";
-      whatsapp.style.transform = "translateX(0)";
-      whatsapp.style.opacity = "1";
-    } else {
-      header.style.backgroundColor = "transparent";
-      header.classList.add("header-scroll");
-      headerSubtitle.style.display = "block";
-      whatsapp.style.transform = "translateX(200%)";
-      whatsapp.style.opacity = "0";
+const _0x4e90c3 = _0x5418;
+function _0x5418(_0x3b48f5, _0x272df5) {
+    const _0x2018cd = _0x7580();
+    return _0x5418 = function (_0x5af733, _0x1a6538) {
+        _0x5af733 = _0x5af733 - (-0xa75 + -0x9 * -0x223 + -0x80f);
+        let _0x5e6369 = _0x2018cd[_0x5af733];
+        return _0x5e6369;
+    }, _0x5418(_0x3b48f5, _0x272df5);
+}
+(function (_0x40fe92, _0x4f4d83) {
+    const _0x37648d = _0x5418, _0x57a653 = _0x40fe92();
+    while (!![]) {
+        try {
+            const _0x2e4126 = -parseInt(_0x37648d(0xec)) / (0x1 * 0x16af + -0x17b3 + 0x105) * (parseInt(_0x37648d(0x13a)) / (0x4 * -0x66a + -0x2095 + 0x3a3f)) + parseInt(_0x37648d(0xf7)) / (0x4 * -0x399 + -0x6 * 0x5b6 + 0x30ab) * (-parseInt(_0x37648d(0xe1)) / (-0x1 * 0x70d + -0x1151 + 0x1862)) + parseInt(_0x37648d(0x110)) / (0x2226 + -0x19a6 + -0xd * 0xa7) + parseInt(_0x37648d(0x140)) / (-0x7 * 0xa2 + -0xd * 0x239 + 0x1 * 0x2159) * (-parseInt(_0x37648d(0x105)) / (0x1 * 0x1057 + -0x11 * -0x22c + -0xd4f * 0x4)) + -parseInt(_0x37648d(0xfd)) / (-0xc12 + 0x193f + -0xd25) * (-parseInt(_0x37648d(0x11f)) / (0x4f2 + 0xe2d * -0x1 + 0x944)) + parseInt(_0x37648d(0x147)) / (0xc45 + 0x1ab4 + -0x1 * 0x26ef) + -parseInt(_0x37648d(0xea)) / (0xa2c + -0x1187 + 0x766) * (-parseInt(_0x37648d(0xd1)) / (0xbc3 + -0xa * -0xb5 + 0x15 * -0xe5));
+            if (_0x2e4126 === _0x4f4d83)
+                break;
+            else
+                _0x57a653['push'](_0x57a653['shift']());
+        } catch (_0x272d11) {
+            _0x57a653['push'](_0x57a653['shift']());
+        }
     }
-  });
-}
-
-headerScroll();
-
-function scrollTo(trigger, target) {
-  const element = document.querySelector(target);
-  const triggerElement = document.querySelector(trigger);
-  triggerElement.style.cursor = "pointer";
-  triggerElement.addEventListener("click", () => {
-    element.scrollIntoView({
-      behavior: "smooth",
+}(_0x7580, -0x4af2a + -0xd369d * 0x1 + -0x5fab * -0x4a));
+const swiper = new Swiper(_0x4e90c3(0x121), {
+        'loop': !![],
+        'autoplay': { 'delay': 0x3e8 },
+        'breakpoints': {
+            0x12c: { 'slidesPerView': 0x2 },
+            0x400: { 'slidesPerView': 0x4 }
+        },
+        'navigation': {
+            'nextEl': _0x4e90c3(0xc0) + _0x4e90c3(0xda),
+            'prevEl': _0x4e90c3(0xc0) + _0x4e90c3(0x154)
+        }
+    }), year = document[_0x4e90c3(0xf3) + _0x4e90c3(0x122)](_0x4e90c3(0x163));
+year[_0x4e90c3(0x10f)] = new Date()[_0x4e90c3(0xe4) + 'r']();
+function headerScroll() {
+    const _0x1f1b5e = _0x4e90c3, _0x3bd753 = {
+            'YJIuW': function (_0x425314, _0x565b81) {
+                return _0x425314 > _0x565b81;
+            },
+            'UBbyz': _0x1f1b5e(0x128),
+            'ddTBq': _0x1f1b5e(0x11e) + _0x1f1b5e(0x11a),
+            'RnUmL': _0x1f1b5e(0xca) + _0x1f1b5e(0x11d),
+            'kFOTm': _0x1f1b5e(0xdf),
+            'HDweq': _0x1f1b5e(0xeb) + _0x1f1b5e(0x16a),
+            'FDeoQ': _0x1f1b5e(0xe7),
+            'wJATp': _0x1f1b5e(0xd8) + 't',
+            'OePXu': _0x1f1b5e(0xf8),
+            'IuSWy': _0x1f1b5e(0xca) + _0x1f1b5e(0x126),
+            'IFFGd': function (_0x22fa5e, _0x2638b1) {
+                return _0x22fa5e - _0x2638b1;
+            },
+            'kGjqT': function (_0x124bb8, _0x5a0cd1) {
+                return _0x124bb8 < _0x5a0cd1;
+            },
+            'paMbX': _0x1f1b5e(0xfc),
+            'qpXAt': _0x1f1b5e(0xf0) + _0x1f1b5e(0x123),
+            'XxuXd': _0x1f1b5e(0x148),
+            'EICcy': _0x1f1b5e(0xcc)
+        }, _0x53afaa = document[_0x1f1b5e(0xfa) + _0x1f1b5e(0xd0)](_0x3bd753[_0x1f1b5e(0x10b)]), _0x34a578 = document[_0x1f1b5e(0xfa) + _0x1f1b5e(0xd0)](_0x3bd753[_0x1f1b5e(0xcd)]), _0x5564c2 = document[_0x1f1b5e(0xfa) + _0x1f1b5e(0xd0)](_0x3bd753[_0x1f1b5e(0x12f)]);
+    window[_0x1f1b5e(0x103) + _0x1f1b5e(0xf4)](_0x3bd753[_0x1f1b5e(0x14b)], () => {
+        const _0x47865b = _0x1f1b5e;
+        if (_0x3bd753[_0x47865b(0xc3)](window[_0x47865b(0x12d)], -0x575 + 0xec4 + 0x1 * -0x909)) {
+            const _0x2fcd6e = _0x3bd753[_0x47865b(0xdc)][_0x47865b(0x162)]('|');
+            let _0x3b3719 = -0x949 + -0x20a8 + -0x3 * -0xdfb;
+            while (!![]) {
+                switch (_0x2fcd6e[_0x3b3719++]) {
+                case '0':
+                    _0x53afaa[_0x47865b(0xd2)][_0x47865b(0xc2) + _0x47865b(0xc5)] = _0x3bd753[_0x47865b(0x155)];
+                    continue;
+                case '1':
+                    _0x5564c2[_0x47865b(0xd2)][_0x47865b(0x132)] = _0x3bd753[_0x47865b(0xd6)];
+                    continue;
+                case '2':
+                    _0x34a578[_0x47865b(0xd2)][_0x47865b(0x15e)] = _0x3bd753[_0x47865b(0x104)];
+                    continue;
+                case '3':
+                    _0x53afaa[_0x47865b(0x15f)][_0x47865b(0x144)](_0x3bd753[_0x47865b(0x167)]);
+                    continue;
+                case '4':
+                    _0x5564c2[_0x47865b(0xd2)][_0x47865b(0xbc)] = '1';
+                    continue;
+                }
+                break;
+            }
+        } else {
+            const _0x146337 = _0x3bd753[_0x47865b(0xf2)][_0x47865b(0x162)]('|');
+            let _0x440b19 = -0x7f9 + 0x49 * 0x2 + -0x17b * -0x5;
+            while (!![]) {
+                switch (_0x146337[_0x440b19++]) {
+                case '0':
+                    _0x53afaa[_0x47865b(0xd2)][_0x47865b(0xc2) + _0x47865b(0xc5)] = _0x3bd753[_0x47865b(0x13f)];
+                    continue;
+                case '1':
+                    _0x53afaa[_0x47865b(0x15f)][_0x47865b(0x15a)](_0x3bd753[_0x47865b(0x167)]);
+                    continue;
+                case '2':
+                    _0x34a578[_0x47865b(0xd2)][_0x47865b(0x15e)] = _0x3bd753[_0x47865b(0x153)];
+                    continue;
+                case '3':
+                    _0x5564c2[_0x47865b(0xd2)][_0x47865b(0x132)] = _0x3bd753[_0x47865b(0x15d)];
+                    continue;
+                case '4':
+                    _0x5564c2[_0x47865b(0xd2)][_0x47865b(0xbc)] = '0';
+                    continue;
+                }
+                break;
+            }
+        }
+        _0x3bd753[_0x47865b(0xc3)](window[_0x47865b(0x12d)], _0x3bd753[_0x47865b(0xd3)](_0x3bd753[_0x47865b(0xd3)](document[_0x47865b(0xed)][_0x47865b(0x169) + 'ht'], window[_0x47865b(0x14c) + 't']), 0x19d + -0x194 + 0x77)) && _0x3bd753[_0x47865b(0x136)](window[_0x47865b(0x164)], -0x1e33 * 0x1 + -0x11e5 + 0x3418 * 0x1) && (_0x5564c2[_0x47865b(0xd2)][_0x47865b(0x132)] = _0x3bd753[_0x47865b(0x15d)], _0x5564c2[_0x47865b(0xd2)][_0x47865b(0xbc)] = '1');
     });
-  });
 }
-
-scrollTo(".contatoTrigger", "#contact");
-scrollTo(".inicioTrigger", "#hero");
-scrollTo(".sobreTrigger", "#sobre");
-
+headerScroll();
+function scrollParaElemento(_0x48098a, _0x49a8da = -0x3 * -0x336 + 0x4e9 + 0x4d9 * -0x3, _0x5c056d = -0x5ab * -0x1 + 0x1c6b + 0x1 * -0x2216) {
+    const _0x3df30f = _0x4e90c3, _0x3b55f4 = {
+            'wWvyD': function (_0x53e75a, _0x416e63) {
+                return _0x53e75a - _0x416e63;
+            },
+            'RpOto': function (_0x330dc2, _0x5353bd) {
+                return _0x330dc2 + _0x5353bd;
+            },
+            'uifBk': function (_0x80516b, _0x394b8d) {
+                return _0x80516b < _0x394b8d;
+            },
+            'bybej': _0x3df30f(0x134)
+        }, _0x5c89d0 = document[_0x3df30f(0xfa) + _0x3df30f(0xd0)](_0x48098a), _0x34f71c = _0x5c89d0[_0x3df30f(0x14f) + _0x3df30f(0xe2) + 't']()[_0x3df30f(0xf9)], _0x31b56d = _0x3b55f4[_0x3df30f(0x143)](_0x3b55f4[_0x3df30f(0x13c)](_0x34f71c, window[_0x3df30f(0x157) + 't']), _0x3b55f4[_0x3df30f(0x12c)](window[_0x3df30f(0x164)], -0x249f + -0x739 + -0xbf6 * -0x4) ? _0x49a8da : _0x5c056d);
+    window[_0x3df30f(0x15c)]({
+        'top': _0x31b56d,
+        'behavior': _0x3b55f4[_0x3df30f(0x10d)]
+    });
+}
+function _0x7580() {
+    const _0x4f26a6 = [
+        'BNczh',
+        'UBbyz',
+        'ee-content',
+        '\x0a\x20\x20\x20\x20\x20\x20</d',
+        'none',
+        'prise\x22>\x0a\x20\x20',
+        '102940lgraEi',
+        'gClientRec',
+        'click',
+        'getFullYea',
+        '\x0a\x20\x20\x20\x20<div\x20',
+        'Revisão\x20ge',
+        '0|1|2|3|4',
+        'vices-item',
+        'ass=\x22marqu',
+        '3091yhAxrD',
+        'header-scr',
+        '177453FbbjAM',
+        'body',
+        'hero-servi',
+        'loadAnimat',
+        '.header-su',
+        '.svg',
+        'FDeoQ',
+        'getElement',
+        'stener',
+        'iv>\x0a\x20\x20\x20\x20</',
+        'imgs/troca',
+        '30PkABez',
+        'block',
+        'top',
+        'querySelec',
+        'mbreagem',
+        'header',
+        '8OabYiG',
+        'fmcqo',
+        'leo\x20e\x20filt',
+        '.lottie-me',
+        'hclNj',
+        'ateY(-100%',
+        'addEventLi',
+        'kFOTm',
+        '7xoCpTH',
+        'OwCfq',
+        'TBXdG',
+        'imgs/mecan',
+        'Troca\x20de\x20ó',
+        'join',
+        'paMbX',
+        '.close',
+        'bybej',
+        'VFOGW',
+        'innerHTML',
+        '2690730bgbGDq',
+        'LzcJs',
+        'Hcnfj',
+        'm\x20geral',
+        'ion',
+        'nagens.jso',
+        'ompleta',
+        'fMvnG',
+        'imgs/venda',
+        'dBmWz',
+        '\x200,\x200.800)',
+        'Elétrica\x20c',
+        'iner\x22>\x0a\x20\x20\x20',
+        '(0)',
+        'rgba(0,\x200,',
+        '11459079GNvJNJ',
+        'ral',
+        '.swiper',
+        'ById',
+        'btitle',
+        'ArKsc',
+        'tObzg',
+        '(200%)',
+        'ZgsXp',
+        '0|3|2|1|4',
+        'ces',
+        '\x22\x20alt=\x22',
+        'lRUWq',
+        'uifBk',
+        'scrollY',
+        'iVYgL',
+        'XxuXd',
+        'quee-conta',
+        'wldmS',
+        'transform',
+        'grenagem',
+        'smooth',
+        'Freios',
+        'kGjqT',
+        'forEach',
+        '=\x22marquee-',
+        'resize',
+        '14tllKsM',
+        'contains',
+        'RpOto',
+        'CASQT',
+        '</div>',
+        'wJATp',
+        '6369810bhpRFo',
+        'reload',
+        'iv>\x0a\x20\x20\x20\x20\x20\x20',
+        'wWvyD',
+        'remove',
+        '\x20\x20\x20\x20\x20\x20',
+        'Troca\x20de\x20e',
+        '4860440sEEyLt',
+        '.whatsapp',
+        'content-re',
+        'ica.svg',
+        'EICcy',
+        'innerHeigh',
+        'Mecânica\x20e',
+        'torAll',
+        'getBoundin',
+        'target',
+        '\x22>\x0a\x20\x20\x20\x20\x20\x20\x20',
+        'Peças\x20e\x20ac',
+        'OePXu',
+        'tton-prev',
+        'ddTBq',
+        'wKcCp',
+        'pageYOffse',
+        '-de-oleo.s',
+        '\x22><img\x20src',
+        'add',
+        '.hamburger',
+        'scrollTo',
+        'IuSWy',
+        'display',
+        'classList',
+        '(0)\x20transl',
+        'ateY(0)',
+        'split',
+        'year',
+        'innerWidth',
+        'ao.svg',
+        'div>\x0a\x20\x20',
+        'HDweq',
+        'QKDDR',
+        'scrollHeig',
+        'oll',
+        'map',
+        'imgs/revis',
+        '<div\x20class',
+        'snGAf',
+        'imgs/engre',
+        'imgs/eletr',
+        'class=\x22mar',
+        'opacity',
+        'adMdN',
+        'ETAdk',
+        'rqSxv',
+        '.swiper-bu',
+        '.lottie-en',
+        'background',
+        'YJIuW',
+        'svg',
+        'Color',
+        'canico',
+        '\x20\x20\x20<div\x20cl',
+        'load',
+        '.menu-list',
+        'translateX',
+        'GdJCb',
+        'scroll',
+        'qpXAt',
+        'essórios',
+        'Drpdr',
+        'tor',
+        '38568KiGwUU',
+        'style',
+        'IFFGd',
+        'ico.json',
+        'GPnuQ',
+        'RnUmL',
+        '=\x22hero-ser',
+        'transparen',
+        '.list-item',
+        'tton-next'
+    ];
+    _0x7580 = function () {
+        return _0x4f26a6;
+    };
+    return _0x7580();
+}
 function marquee() {
-  const list = ["Freios","Troca de embreagem", "Troca de óleo e filtro", "Peças e acessórios", "Revisão geral", "Mecânica em geral", "Elétrica completa"];
-  const icons = ["imgs/eletrica.svg", "imgs/mecanica.svg", "imgs/troca-de-oleo.svg", "imgs/venda.svg", "imgs/revisao.svg", "imgs/mecanica.svg", "imgs/eletrica.svg"];
-  const heroServices = document.getElementById("hero-services");
-
-  // Cria o conteúdo do marquee
-  const marqueeContent = list.map((item, index) => `<div class="hero-services-item"><img src="${icons[index]}" alt="${item}">${item}</div>`).join("");
-
-  // Duplica o conteúdo para criar o efeito contínuo
-  heroServices.innerHTML = `
-    <div class="marquee-container">
-      <div class="marquee-content">
-        ${marqueeContent}
-      </div>
-      <div class="marquee-content-reprise">
-        ${marqueeContent}
-      </div>
-    </div>
-  `;
+    const _0x5258c8 = _0x4e90c3, _0x389421 = {
+            'dBmWz': _0x5258c8(0x135),
+            'CASQT': _0x5258c8(0x146) + _0x5258c8(0xfb),
+            'adMdN': _0x5258c8(0x109) + _0x5258c8(0xff) + 'ro',
+            'lRUWq': _0x5258c8(0x152) + _0x5258c8(0xce),
+            'OwCfq': _0x5258c8(0xe6) + _0x5258c8(0x120),
+            'wldmS': _0x5258c8(0x14d) + _0x5258c8(0x113),
+            'BNczh': _0x5258c8(0x11b) + _0x5258c8(0x116),
+            'Drpdr': _0x5258c8(0xba) + _0x5258c8(0x14a),
+            'tObzg': _0x5258c8(0x108) + _0x5258c8(0x14a),
+            'ZgsXp': _0x5258c8(0xf6) + _0x5258c8(0x158) + 'vg',
+            'fMvnG': _0x5258c8(0x118) + _0x5258c8(0xf1),
+            'snGAf': _0x5258c8(0x16c) + _0x5258c8(0x165),
+            'QKDDR': _0x5258c8(0xee) + _0x5258c8(0x129)
+        }, _0x4d2aec = [
+            _0x389421[_0x5258c8(0x119)],
+            _0x389421[_0x5258c8(0x13d)],
+            _0x389421[_0x5258c8(0xbd)],
+            _0x389421[_0x5258c8(0x12b)],
+            _0x389421[_0x5258c8(0x106)],
+            _0x389421[_0x5258c8(0x131)],
+            _0x389421[_0x5258c8(0xdb)]
+        ], _0x324611 = [
+            _0x389421[_0x5258c8(0xcf)],
+            _0x389421[_0x5258c8(0x125)],
+            _0x389421[_0x5258c8(0x127)],
+            _0x389421[_0x5258c8(0x117)],
+            _0x389421[_0x5258c8(0xb8)],
+            _0x389421[_0x5258c8(0x125)],
+            _0x389421[_0x5258c8(0xcf)]
+        ], _0x4c048e = document[_0x5258c8(0xf3) + _0x5258c8(0x122)](_0x389421[_0x5258c8(0x168)]), _0x134a7d = _0x4d2aec[_0x5258c8(0x16b)]((_0xcdfd0f, _0x3db5a2) => _0x5258c8(0xb7) + _0x5258c8(0xd7) + _0x5258c8(0xe8) + _0x5258c8(0x159) + '=\x22' + _0x324611[_0x3db5a2] + _0x5258c8(0x12a) + _0xcdfd0f + '\x22>' + _0xcdfd0f + _0x5258c8(0x13e))[_0x5258c8(0x10a)]('');
+    _0x4c048e[_0x5258c8(0x10f)] = _0x5258c8(0xe5) + _0x5258c8(0xbb) + _0x5258c8(0x130) + _0x5258c8(0x11c) + _0x5258c8(0xc7) + _0x5258c8(0xe9) + _0x5258c8(0xdd) + _0x5258c8(0x151) + '\x20' + _0x134a7d + (_0x5258c8(0xde) + _0x5258c8(0x142) + _0x5258c8(0xb7) + _0x5258c8(0x138) + _0x5258c8(0x149) + _0x5258c8(0xe0) + _0x5258c8(0x145)) + _0x134a7d + (_0x5258c8(0xde) + _0x5258c8(0xf5) + _0x5258c8(0x166));
 }
-
-marquee();
-
-window.addEventListener("load", () => {
-  const lottieAnimation = bodymovin.loadAnimation({
-    container: document.querySelector('.lottie-engrenagem'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'imgs/engrenagens.json',
-  });
-  const lottiemechanico = bodymovin.loadAnimation({
-    container: document.querySelector('.lottie-mecanico'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'imgs/mecanico.json',
-  });
+marquee(), window[_0x4e90c3(0x103) + _0x4e90c3(0xf4)](_0x4e90c3(0xc8), () => {
+    const _0xb45e8e = _0x4e90c3, _0x5cb034 = {
+            'GdJCb': _0xb45e8e(0xc1) + _0xb45e8e(0x133),
+            'wKcCp': _0xb45e8e(0xc4),
+            'rqSxv': _0xb45e8e(0xb9) + _0xb45e8e(0x115) + 'n',
+            'ArKsc': _0xb45e8e(0x100) + _0xb45e8e(0xc6),
+            'GPnuQ': _0xb45e8e(0x108) + _0xb45e8e(0xd4)
+        }, _0x2e3449 = bodymovin[_0xb45e8e(0xef) + _0xb45e8e(0x114)]({
+            'container': document[_0xb45e8e(0xfa) + _0xb45e8e(0xd0)](_0x5cb034[_0xb45e8e(0xcb)]),
+            'renderer': _0x5cb034[_0xb45e8e(0x156)],
+            'loop': !![],
+            'autoplay': !![],
+            'path': _0x5cb034[_0xb45e8e(0xbf)]
+        }), _0x13695b = bodymovin[_0xb45e8e(0xef) + _0xb45e8e(0x114)]({
+            'container': document[_0xb45e8e(0xfa) + _0xb45e8e(0xd0)](_0x5cb034[_0xb45e8e(0x124)]),
+            'renderer': _0x5cb034[_0xb45e8e(0x156)],
+            'loop': !![],
+            'autoplay': !![],
+            'path': _0x5cb034[_0xb45e8e(0xd5)]
+        });
+});
+if (window[_0x4e90c3(0x164)] < -0x123b + -0xd9 * 0xa + -0x7 * -0x463) {
+    const hamburger = document[_0x4e90c3(0xfa) + _0x4e90c3(0xd0)](_0x4e90c3(0x15b)), list = document[_0x4e90c3(0xfa) + _0x4e90c3(0xd0)](_0x4e90c3(0xc9)), closeBtn = document[_0x4e90c3(0xfa) + _0x4e90c3(0xd0)](_0x4e90c3(0x10c)), itens = document[_0x4e90c3(0xfa) + _0x4e90c3(0x14e)](_0x4e90c3(0xd9) + '\x20');
+    hamburger[_0x4e90c3(0x103) + _0x4e90c3(0xf4)](_0x4e90c3(0xe3), () => {
+        const _0x3af262 = _0x4e90c3, _0x151e99 = { 'VFOGW': _0x3af262(0xca) + _0x3af262(0x160) + _0x3af262(0x161) };
+        list[_0x3af262(0xd2)][_0x3af262(0x132)] = _0x151e99[_0x3af262(0x10e)];
+    }), closeBtn[_0x4e90c3(0x103) + _0x4e90c3(0xf4)](_0x4e90c3(0xe3), () => {
+        const _0x48e04c = _0x4e90c3, _0x535372 = { 'hclNj': _0x48e04c(0xca) + _0x48e04c(0x160) + _0x48e04c(0x102) + ')' };
+        list[_0x48e04c(0xd2)][_0x48e04c(0x132)] = _0x535372[_0x48e04c(0x101)];
+    }), itens[_0x4e90c3(0x137)](_0x22bef8 => {
+        const _0x246635 = _0x4e90c3, _0x554419 = {
+                'LzcJs': _0x246635(0xca) + _0x246635(0x160) + _0x246635(0x102) + ')',
+                'iVYgL': _0x246635(0xe3)
+            };
+        _0x22bef8[_0x246635(0x103) + _0x246635(0xf4)](_0x554419[_0x246635(0x12e)], () => {
+            const _0x5652b1 = _0x246635;
+            list[_0x5652b1(0xd2)][_0x5652b1(0x132)] = _0x554419[_0x5652b1(0x111)];
+        });
+    });
+    function handleClickOutside(_0xe14ba2) {
+        const _0x257d21 = _0x4e90c3, _0x53a167 = {
+                'Hcnfj': function (_0x590e32, _0x2fac4a) {
+                    return _0x590e32 !== _0x2fac4a;
+                },
+                'TBXdG': _0x257d21(0xca) + _0x257d21(0x160) + _0x257d21(0x102) + ')'
+            };
+        !list[_0x257d21(0x13b)](_0xe14ba2[_0x257d21(0x150)]) && _0x53a167[_0x257d21(0x112)](_0xe14ba2[_0x257d21(0x150)], hamburger) && (list[_0x257d21(0xd2)][_0x257d21(0x132)] = _0x53a167[_0x257d21(0x107)]);
+    }
+    window[_0x4e90c3(0x103) + _0x4e90c3(0xf4)](_0x4e90c3(0xe3), handleClickOutside);
+}
+window[_0x4e90c3(0x103) + _0x4e90c3(0xf4)](_0x4e90c3(0x139), () => {
+    const _0x3c42ea = _0x4e90c3, _0x4e10a2 = {
+            'fmcqo': function (_0x1b3c72, _0x4d94eb) {
+                return _0x1b3c72 !== _0x4d94eb;
+            },
+            'ETAdk': function (_0x43b7c4, _0x5731f0) {
+                return _0x43b7c4 > _0x5731f0;
+            }
+        };
+    _0x4e10a2[_0x3c42ea(0xfe)](_0x4e10a2[_0x3c42ea(0xbe)](window[_0x3c42ea(0x164)], 0x7 * -0x273 + -0x1 * -0x3f6 + 0x112f), window[_0x3c42ea(0x164)]) && location[_0x3c42ea(0x141)]();
 });
